@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card';
 import { Calculator } from '@/components/Calculator';
 import { ResultsCard } from '@/components/ResultsCard';
 import { AdminPanel } from '@/components/AdminPanel';
+import { Footer } from '@/components/Footer';
 import { ShippingCalculator, CalculationInput, CalculationResult } from '@/lib/calculator';
 import { defaultZones, defaultFulfillmentRates, defaultShippingRates, defaultDutyRates, Zone, FulfillmentRate, ShippingRate, DutyRate } from '@/lib/mockData';
 import { Settings, Calculator as CalcIcon } from 'lucide-react';
@@ -143,6 +144,7 @@ const Index = () => {
         dutyRates={dutyRates}
         onUpdate={handleAdminUpdate}
       />
+      <Footer />
     </div>
   );
 };
